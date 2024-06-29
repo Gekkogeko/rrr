@@ -18,7 +18,7 @@ global.canalNombreGB = ["Whatsapp bot"]
 global.channelRD = await getRandomChannel()
 
 // Imágenes 
-global.imagen1 = fs.readFileSync("./media/wangsaff")
+global.imagen1 = fs.readFileSync("./media/wangsaff.webp")
 global.imagen2 = fs.readFileSync("./media/menus/img1.jpg")
 global.imagen3 = fs.readFileSync("./media/menus/img2.jpg")
 global.imagen4 = fs.readFileSync("./media/menus/img3.jpg")
