@@ -1517,10 +1517,10 @@ if (!isAnticall) return
 for (let nk of callUpdate) { 
 if (nk.isGroup == false) {
 if (nk.status == "offer") {
-let callmsg = await this.reply(nk.from, `${lenguajeGB['smsCont15']()} *@${nk.from.split('@')[0]}*, ${nk.isVideo ? lenguajeGB.smsCont16() : lenguajeGB.smsCont17()} ${lenguajeGB['smsCont18']()}`, false, { mentions: [nk.from] })
+//let callmsg = await this.reply(nk.from, ``, false, { mentions: [nk.from] })
 //let data = global.owner.filter(([id, isCreator]) => id && isCreator)
 //await this.sendContact(nk.from, data.map(([id, name]) => [id, name]), false, { quoted: callmsg })
-await this.updateBlockStatus(nk.from, 'block')
+//await this.updateBlockStatus(nk.from, 'block')
 }}}}
 
 export async function deleteUpdate(message) {
