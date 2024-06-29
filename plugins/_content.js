@@ -11,14 +11,14 @@ global.key = ''
 global.canales = [canal1, canal2, canal3, canal4].getRandom()
 global.welgata = [tk, ig, yt2, yt2, ig, md, ig, yt, paypal, yt2, yt2, ig, fb, tk, ths, asistencia].getRandom()
 global.redesMenu = [canal1, canal2, canal3, canal4, soporteGB, grupo1, grupo2, grupo3, grupo4, grupo5, grupo6, md, ig, paypal, yt, asistencia, fb, tk].getRandom()
-global.accountsgb = [canal1, canal2, canal3, canal4, tk, ig, yt, paypal, fb, ths, md, asistencia].getRandom()
+global.accountsgb = ["www.google.com"]
 
-global.canalIdGB = ["120363178367665133@newsletter", "120363178367665133@newsletter", "120363178367665133@newsletter", "120363178367665133@newsletter"]
+global.canalIdGB = [""]
 global.canalNombreGB = ["Whatsapp bot"]
 global.channelRD = await getRandomChannel()
 
 // Imágenes 
-global.imagen1 = fs.readFileSync("./media/menus/Menu3.jpg")
+global.imagen1 = fs.readFileSync("./media/wangsaff")
 global.imagen2 = fs.readFileSync("./media/menus/img1.jpg")
 global.imagen3 = fs.readFileSync("./media/menus/img2.jpg")
 global.imagen4 = fs.readFileSync("./media/menus/img3.jpg")
