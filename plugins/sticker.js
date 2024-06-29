@@ -6,6 +6,8 @@ import { webp2png } from '../lib/webp2mp4.js'
 let handler = async (m, { conn, args, usedPrefix, command }) => {
   let stiker = false
   let user = db.data.users[m.sender]
+  let wow = 'google.com'
+  let wowi = 'https://cdn-icons-png.freepik.com/256/3983/3983877.png?semt=ais_hybrid'
   let time = user.lastmining + 10000 //tiempo de espera en min
 if (new Date - user.lastmiming < 10000) return await conn.reply(m.chat, `Tunggu beberapa detik untuk menggunakan command`,  m)
   try {
@@ -39,7 +41,7 @@ if (new Date - user.lastmiming < 10000) return await conn.reply(m.chat, `Tunggu 
     console.error(e)
     if (!stiker) stiker = e
   } finally {
-     if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, { quoted: m })
+     if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `Whatsapp Bot`, mediaType: 2, sourceUrl: wow, thumbnail: wowi}}}, { quoted: m })
     else throw 'Reply image/video'
   }
 user.lastmiming = new Date * 1
